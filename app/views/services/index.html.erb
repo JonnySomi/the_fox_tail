@@ -10,7 +10,7 @@
       <% @services.each do |service| %>
         <div class="index-card">
           <%= service.name%>
-          <img src=<%= service.photo_url %>/>
+          <%= image_tag service.photo_url %>/>
           <% end %>
         </div>
     </div>
