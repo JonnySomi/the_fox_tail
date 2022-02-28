@@ -9,8 +9,8 @@
     <div class="cards">
       <% @services.each do |service| %>
         <div class="index-card">
-          <%= service.name%>
-          <%= image_tag service.photo_url %>/>
+         <h2><%= service.name%></h2>
+          <%= image_tag service.photo_url %>
           <% end %>
         </div>
     </div>
