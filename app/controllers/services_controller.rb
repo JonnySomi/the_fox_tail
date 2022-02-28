@@ -10,9 +10,9 @@ class ServicesController < ApplicationController
 
 private
 
-  def find_service
-    @service = Service.find(params[:id])
-  end
+  # def find_service
+  #   @service = Service.find(params[:id])
+  # end
 
   def costume_params
     params.require(:service).permit(:name, :photo_url)
