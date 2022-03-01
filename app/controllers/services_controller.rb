@@ -29,6 +29,6 @@ private
   # end
 
   def service_params
-    params.require(:service).permit(:name, :photo_url)
+    params.require(:service).permit(:name, :photo_url, :type)
   end
 end
