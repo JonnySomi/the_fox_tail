@@ -8,11 +8,11 @@
   <div class="card-container">
     <div class="cards">
       <% @services.each do |service| %>
-        <div class="index-card">
+        <div class="card-category">
          <h2><%= service.name%></h2>
-          <%= image_tag service.photo_url %>
-        <% end %>
-      </div>
+         <%= image_tag service.photo_url, class: "card-category-image" %>
+         </div>
+      <% end %>
     </div>
   </div>
 </div>
