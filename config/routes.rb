@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get "dashboard", to: 'pages#dashboard'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :services, only: %i[index]
+  resources :services, only: %i[index] do
+    resources :user_services
+  end
 end
 
 # service1 = Service.create(name: "Netflix", photo_url:"https://geeko.lesoir.be/wp-content/uploads/2019/02/netflix-du-changement-pour-ses-contenus-originaux-1-1024x528.jpg")
