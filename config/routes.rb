@@ -11,3 +11,5 @@ end
 # service2 = Service.create(name: "Amazon Prime", photo_url:"https://img.phonandroid.com/2021/01/amazon-prime-video.jpg")
 
 # service3 = Service.create(name: "Spotify", photo_url:"https://www.blow-ent.com/wp-content/uploads/2021/05/spo.jpg")
+
+# service4 = Service.create(name: "Disney+", photo_url:"https://static-assets.bamgrid.com/product/disneyplus/images/share-default.14fadd993578b9916f855cebafb71e62.png")
