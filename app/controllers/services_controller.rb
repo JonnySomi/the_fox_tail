@@ -12,7 +12,7 @@ class ServicesController < ApplicationController
   # end
 
   def create
-    @service = Costume.new(service_params)
+    @service = Service.new(service_params)
     @service.user = current_user
     if @service.save
       redirect_to services_path
@@ -28,7 +28,7 @@ private
   #   @service = Service.find(params[:id])
   # end
 
-  def costume_params
+  def service_params
     params.require(:service).permit(:name, :photo_url)
   end
 end
