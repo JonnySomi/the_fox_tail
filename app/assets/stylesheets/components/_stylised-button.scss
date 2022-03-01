@@ -1,0 +1,13 @@
+.stylised-button {
+  color: rgb(245, 53, 101);
+  background-color: rgb(37, 87, 223);
+  text-decoration: none;
+  padding: 7px;
+  box-shadow: 0.8px 0.8px 1px rgb(245, 53, 101);
+  border-radius: 6px;
+}
+
+.stylised-button:hover {
+  background-color: gold;
+  color: rgb(245, 53, 101);
+}
