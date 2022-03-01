@@ -8,9 +8,11 @@
         <% when @service.category == 'streaming' %>
           <%= f.input :genre, collection: ['Action', 'Comedy', 'Drama', 'Fantasy', 'Horror/mystery', 'Romance',
                                            'Thriller', 'kids/family', 'documentary']  %>
-        <% when @service.category = 'media' %>
-        <%= f.collection_select = ['Politic', 'K']  %>
-        <% end %>
+        <% when @service.category == 'media' %>
+          <%= f.input :genre, collection: ['Politic', 'Ecology/Nature', 'Business/Finance', 'Caricature', 'Kids', 'Fashion', 'Lifestyle/DIY', 'Sport']  %>
+        <% when @service.category == 'Video Games' %>
+          <%= f.input :genre, collection: ['Survavil/Horror/War', 'Simulation/Sports', 'Strategy/Logic/Education', 'Action/Adventure', 'Kids' ]  %>
+    <% end %>
       <%= f.input :price_per_month, placeholder: "Price in €" %>
       <%= f.submit class:'stylised-button'%>
       <% if @service.id == nil %>
