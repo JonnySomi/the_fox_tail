@@ -3,10 +3,24 @@ class ServicesController < ApplicationController
     @services = Service.all
   end
 
+  def new
+    @service = Service.new
+  end
   # def show
   #   find_service
   #   @user_services = User_service.new
   # end
+
+  def create
+    @service = Costume.new(service_params)
+    @service.user = current_user
+    if @service.save
+      redirect_to services_path
+    else
+      render :new
+    end
+  end
+
 
 private
 
