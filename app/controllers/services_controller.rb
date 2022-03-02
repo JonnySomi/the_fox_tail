@@ -22,7 +22,7 @@ class ServicesController < ApplicationController
   end
 
 
-private
+  private
 
   # def find_service
   #   @service = Service.find(params[:id])
