@@ -2,9 +2,23 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   get "dashboard", to: 'pages#dashboard'
+  get "user_details", to: 'pages#user_details'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :services, only: %i[index new create]
+<<<<<<< HEAD
+<<<<<<< HEAD
+  resources :services, only: %i[index new create] do
+    resources :user_services
+  end
+=======
+  resources :services, only: %i[index]
+  resources :user_services, only: %i[index]
+>>>>>>> master
 end
+=======
+  resources :services, only: %i[index new create] do
+    resources :user_services
+  end
+>>>>>>> f22f692e36beaec58c1296f55e1039ef90cf4db7
 
 # service1 = Service.create(name: "Netflix", photo_url:"https://geeko.lesoir.be/wp-content/uploads/2019/02/netflix-du-changement-pour-ses-contenus-originaux-1-1024x528.jpg")
 
