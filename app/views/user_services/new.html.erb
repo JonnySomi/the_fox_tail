@@ -11,7 +11,11 @@
         <% when @service.category == 'media' %>
           <%= f.input :genre, collection: ['Politic', 'Ecology/Nature', 'Business/Finance', 'Caricature', 'Kids', 'Fashion', 'Lifestyle/DIY', 'Sport']  %>
         <% when @service.category == 'Video Games' %>
-          <%= f.input :genre, collection: ['Survavil/Horror/War', 'Simulation/Sports', 'Strategy/Logic/Education', 'Action/Adventure', 'Kids' ]  %>
+          <%= f.input :genre, collection: ['Survavil/Horror/War', 'Simulation/Sports', 'Strategy/Logic/Education', 'Action/Adventure', 'Kids', 'Family' ]  %>
+        <% when @service.category == 'music' %>
+          <% f.input :genre, collection: ['pop', 'rap', 'rnb', 'classic', 'electro', 'ASMR', 'rock', 'latino', 'afrobeat', 'opera', 'reggea', 'alternative', 'folx & acoustic', 'soul & funk', 'Jazz', 'arabic', 'asian']  %>
+        <% when @service.category == 'professional' %>
+          <%= f.input :genre, collection: ['languages', 'desktop spreadsheet software']  %>
     <% end %>
       <%= f.input :price_per_month, placeholder: "Price in €" %>
       <%= f.submit class:'stylised-button'%>
