@@ -13,7 +13,7 @@ class ServicesController < ApplicationController
 
   def create
     @service = Service.new(service_params)
-    @service.user = current_user
+    #@service.user = current_user
     if @service.save
       redirect_to services_path
     else
@@ -29,6 +29,6 @@ private
   # end
 
   def service_params
-    params.require(:service).permit(:name, :photo_url, :type)
+    params.require(:service).permit(:name, :photo_url, :category)
   end
 end
