@@ -4,6 +4,11 @@ class ServicesController < ApplicationController
     if params[:query].present?
       @services = @services.where('name ILIKE ?', "%#{params[:query]}%")
     end
+
+    respond_to do |format|
+      format.html # Follow regular flow of Rails
+      format.text { render partial: 'services/list', locals: { services: @services }, formats: [:html] }
+    end
   end
 
   def new
