@@ -1,6 +1,6 @@
 <%= simple_form_for(@service) do |f| %>
   <%= f.input :name %>
   <%= f.input :photo_url %>
-  <%= f.input :category %>
+  <%= f.input :category, collection: ["Streaming", "Media", "Video Games", "Music", "Professional", "VPN"] %>
   <%= f.submit %>
 <% end %>
