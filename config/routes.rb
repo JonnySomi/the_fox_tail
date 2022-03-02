@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   get "user_details", to: 'pages#user_details'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :services, only: %i[index new create] do
-    resources :user_services
+    resources :user_services, only: %i[new create]
   end
+  resources :user_services, only: %i[show]
 end
 
 # service1 = Service.create(name: "Netflix", photo_url:"https://geeko.lesoir.be/wp-content/uploads/2019/02/netflix-du-changement-pour-ses-contenus-originaux-1-1024x528.jpg")
