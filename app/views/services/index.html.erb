@@ -1,19 +1,23 @@
-<div class="container mt-3">
+<!-- index.html.erb -->
+<div class="container">
   <div class="row">
     <div class="textwelcome" style="text-align: center">
       <p class="text2">Subscription services you can track</p>
-        <h1 class="welcometext"><span> Check these out! </span></h1>
-         <%= link_to "Add a new service", new_service_path(@service), class:"button" %>
+      <h1 class="welcometext"><span> Check these out! </span></h1>
+      <%= link_to "Add a new service", new_service_path(@service), class:"button" %>
     </div>
-    <div class="card-container">
-      <div class="cards">
-        <% @services.each do |service| %>
-          <div class="card-category" style="text-align: center">
-            <%= image_tag service.photo_url, class: "card-category-image" %>
-            <h2><%= service.name%></h2>
-          </div>
-        <% end %>
-      </div>
+    <div data-controller="search-services">
+      <%= form_with url: services_path, method: :get, html: { class:
+        'mb-4', data: { search_services_target: 'form' } } do |f| %>
+        <%= f.text_field :query,
+                        class: "form-control",
+                        placeholder: 'Type a service name',
+                        data: { action: 'keyup->search-services#update', search_services_target: 'searchInput' },
+                        value: params[:query]
+                        %>
+
+      <% end %>
+      <%= render 'list', services: @services %>
     </div>
   </div>
 </div>
