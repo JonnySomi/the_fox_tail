@@ -1,6 +1,9 @@
 class ServicesController < ApplicationController
   def index
     @services = Service.all
+    if params[:query].present?
+      @services = @services.where('name ILIKE ?', "%#{params[:query]}%")
+    end
   end
 
   def new

@@ -10,6 +10,12 @@ export default class extends Controller {
   }
 
   update(event) {
-    console.log(event)
+    const query = this.searchInputTarget.value;
+    const url = ‘${this.formTarget.action}?query=${{query}}‘;
+    fetch(url, { headers: { "Accept": "text/plain" } })
+      .then(response => response.text())
+      .then(data => {
+        console.log(data)
+      })
   }
 }
