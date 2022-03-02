@@ -1,19 +1,19 @@
 .navbar-lewagon {
-  justify-content: space-between;
+  justify-content: end;
   background: #282b28 ;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
-  box-shadow: 0.8px 0.8px 1px #3c1900;
-  border-radius: 6px;
-}
-.navbar-lewagon .navbar-collapse .nav-link {
-  color: #fef1e1;
 }
 
-.navbar-lewagon .navbar-collapse:hover {
-  background-color: #ca5310;
+.navbar-collapse {
+  display: content;
+  justify-content: end;
+}
+
+.navbar-lewagon .navbar-collapse .nav-link {
+  color: #fef1e1;
 }
 
 .navbar-lewagon .navbar-brand img {
