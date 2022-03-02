@@ -1,0 +1,27 @@
+.card-user-details {
+  border-radius: 2%;
+  box-shadow: 3px 4px #282b285d;
+  background-color: #ffffffdc;
+}
+
+.user-details-text {
+  font-size: 22px;
+  color: #CA5310;
+  font-weight: bold;
+}
+
+.welcometext {
+  font-size: 42px;
+}
+
+.details-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.user-details-emoji {
+  font-size: 30px;
+  &:hover {
+    font-size: 36px;
+  }
+}
