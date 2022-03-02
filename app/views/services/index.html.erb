@@ -3,14 +3,15 @@
     <div class="textwelcome" style="text-align: center">
       <p class="text2">Subscription services you can track</p>
         <h1 class="welcometext"><span> Check these out! </span></h1>
-         <%= link_to "Add a new service", new_service_path(@service), class:"stylised-button", style:"position: absolute; right: 90px; top: 90px;" %>
+         <%= link_to "Add a new service", new_service_path(@service), class:"button" %>
     </div>
-  <div class="card-container">
-    <div class="cards">
-      <% @services.each do |service| %>
-        <div class="index-card">
-         <h2><%= service.name%></h2>
-          <%= image_tag service.photo_url %>
+    <div class="card-container">
+      <div class="cards">
+        <% @services.each do |service| %>
+          <div class="card-category" style="text-align: center">
+            <%= image_tag service.photo_url, class: "card-category-image" %>
+            <h2><%= service.name%></h2>
+          </div>
         <% end %>
       </div>
     </div>

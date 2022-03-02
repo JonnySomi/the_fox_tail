@@ -1,4 +1,8 @@
 class UserServicesController < ApplicationController
+  def index
+    @user_services = UserService.all
+  end
+  
   def new
     @user_service = UserService.new
     @service = Service.find(params[:service_id])
