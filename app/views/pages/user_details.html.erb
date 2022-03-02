@@ -27,20 +27,14 @@
           <div class="flex flex-wrap">
             <div class="container">
               <div class="main-body">
-                <div class="row gutters-sm">
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="d-flex flex-column align-items-center text-center">
-                          <% if current_user.photo.attached? %>
-                            <%= cl_image_tag current_user.photo.key, class:'dashboard-avatar'%>
-                          <% else %>
-                            <%= image_tag 'profilepicture.jpg', class:'dashboard-avatar'%>
-                          <% end %>
+                <div class="row d-flex" style="height: 60vh;">
+                  <div class="col-md-5 mb-3 pt-3">
+                    <div class="card-user-details card" style="height: 100%">
+                      <div class="card-body d-flex align-items-center justify-center">
+                        <div class="d-flex flex-column align-items-center", style="width: 80%;">
+                          <%= cl_image_tag current_user.photo.key, class:'dashboard-avatar'%>
                           <div class="mt-3">
-                            <h4 class="welcometext"><%= current_user.first_name %></h4>
-                            <p class="text-secondary mb-1">Costume freak</p>
-                            <p class="text-muted font-size-sm">Somewhere</p>
+                            <h2 class="welcometext justify-center"><strong><%= current_user.first_name %></strong></h2>
                             <%# <button class="btn btn-outline-primary">Contact</button> %>
                             <%# need to display our form for edit profile here  %>
                           </div>
@@ -48,53 +42,39 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-8">
-                    <div class="card mb-3">
+                  <div class="col-md-7 pt-3">
+                    <div class="card-user-details card  mb-3 " style="height: 80%">
                       <div class="card-body">
-                        <div class="row">
-                          <div class="col-sm-3">
-                            <h6 class="mb-0  text2">Full Name</h6>
+                        <div class="row d-flex" style="height: 15%">
+                          <div class="col-sm-12 d-flex justify-content-end pr-5">
+                            <%= link_to "✏️", edit_user_registration_path(current_user), class: "user-details-emoji" %>
+                            <%# <a class="btn btn-info" target="__blank" href="">Make it shine!</a> %>
                           </div>
-                          <div class="col-sm-9 text-secondary">
-                            <%= "#{current_user.first_name} #{current_user.last_name}" %>
+                        </div>
+                        <div class="row d-flex align-items-center" style="height: 28%">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0 text2 details-text">Full Name</h6>
+                          </div>
+                          <div class="col-sm-9  text-secondary">
+                             <h6 class="user-details-text"><%= "#{current_user.first_name} #{current_user.last_name}" %></h6>
                           </div>
                         </div>
                         <hr>
-                          <div class="row">
+                          <div class="row d-flex align-items-center" style="height: 28%">
                             <div class="col-sm-3">
-                              <h6 class="mb-0 text2">Email</h6>
+                              <h6 class="mb-0 text2 details-text">Email</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                              <%= current_user.email %>
+                              <h6 class="user-details-text"><%= current_user.email %></h6>
                             </div>
                           </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <%= link_to "Make it shine", edit_user_registration_path(current_user), class: "stylised-button" %>
-                              <%# <a class="btn btn-info" target="__blank" href="">Make it shine!</a> %>
+                           <hr>
+                          <div class="row d-flex align-items-center" style="height: 28%">
+                            <div class="col-sm-3">
+                              <h6 class="mb-0 text2 details-text">Pseudo</h6>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row gutters-sm">
-                        <div class="col-sm-6 mb-3">
-                          <div class="card">
-                            <div class="card-body">
-                              <h6 class="d-flex align-items-center mb-3 text2">Your s'tumes' bookings</h6>
-                              <div class="d-flex flex-column align-items-center text-center">
-                                <small>Nothing here... For now!</small>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                          <div class="card h-10">
-                            <div class="card-body">
-                              <h6 class="d-flex align-items-center mb-3 text2">Hello</h6>
-                              <div class="d-flex flex-column align-items-center text-center">
-                                <small>World</small>
-                              </div>
+                            <div class="col-sm-9 text-secondary">
+                               <h6 class="user-details-text"><%= current_user.pseudo %></h6>
                             </div>
                           </div>
                         </div>
