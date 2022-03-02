@@ -5,8 +5,10 @@
     <h1 class="h3"><%= pluralize services.count, 'result' %> for <code><%= params[:query] %></code></h1>
   <% end %>
   <div class="services">
-    <% services.each do |service| %>
-      <%= render 'service_infos.html', service: service %>
-    <% end %>
+    <div class=" mt-3 cards">
+      <% services.each do |service| %>
+        <%= render 'service_infos.html', service: service %>
+      <% end %>
+    </div>
   </div>
 </div>
