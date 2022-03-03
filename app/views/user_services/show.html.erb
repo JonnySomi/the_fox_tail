@@ -20,6 +20,43 @@
         </div>
       </nav>
       <section>
-      <h1><%= @user_service.service.name %></h1>
+        <div id="main" class="main-content flex-1 pb-24 md:pb-5">
+          <div class="title bg-gradient-to-r from-red-900 to-gray-900 p-4 shadow text-2xl">
+            <h1 class="font-bold pl-2">Your <%= @user_service.service.name %> subscription details</h1>
+          </div>
+          <div class="container" style="height: 90vh;">
+            <div class="p-6 w-full h-full" style="width: 100%; height: 100%">
+              <!--Metric Card-->
+              <div class="card-show bg-white border border-black p-5 " style="width: 100%; height: 100%">
+                <div class="align-items-center">
+                  <%= cl_image_tag @user_service.service.photo.key, style: "object-fit: cover; height: 150px; width: 100%;" %>
+                </div>
+                <div class="card-show-body p-3">
+                  <div class="flex-1 text-center" style="height: 100%">
+                    <h2 class="font-bold uppercase text-4xl p-2"><%= @user_service.service.name %></h2>
+                    <div class="d-flex justify-content-evenly"style="height: 50%">
+                      <div class="d-flex flex-column justify-center" style="height: 50%">
+                        <p class="font-bold text-2xl p-2"><%= @user_service.price_per_month %>€/month</p>
+                        <p class="font-bold text-2xl p-2"><%= @user_service.price_per_month * 12 %>€/year</p>
+                      </div>
+                      <div class="d-flex flex-column justify-center" style="height: 50%">
+                        <p class="font-bold text-2xl p-2 justify-center"><%= @user_service.amount_paid %>€ paid since the <%= @user_service.start_date %> </p>
+                      </div>
+                      <div class="d-flex flex-column " style="height: 50%">
+                        <p class="font-bold text-2xl p-2"><%= @user_service.hour_spent_per_month %>h/month </p>
+                        <p class="font-bold text-2xl p-2"><%= @user_service.hour_spent_per_month * 12%>h/year </p>
+                        <p class="font-bold text-2xl p-2"><%= @user_service.subscription_time * @user_service.hour_spent_per_month%>h since you subscribed </p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column justify-center">
+                      <p class="font-bold text-2xl p-2">Payement due for : <%= @user_service.due_date %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/Metric Card-->
+            </div>
+          </div>
+        </div>
       </section>
   </div>
