@@ -17,9 +17,11 @@ class UserServicesController < ApplicationController
     @user_service.user = current_user
     @service = Service.find(params[:service_id])
     @user_service.service = @service
-      return unless @user_service.save
+    if @user_service.save
       redirect_to dashboard_path
-      #render :new
+    else
+      render :new
+    end
   end
 
   private
@@ -29,6 +31,6 @@ class UserServicesController < ApplicationController
   end
 
   def user_service_params
-    params.require(:user_service).permit(:api_key, :category, :start_date, :price_per_month, :hour_spent_per_month, :genre)
+    params.require(:user_service).permit(:start_date, :price_per_month, :hour_spent_per_month, :genre)
   end
 end

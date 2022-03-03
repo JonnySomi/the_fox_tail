@@ -14,7 +14,7 @@
             <%= f.input :genre, collection: ['pop', 'rap', 'rnb', 'classic', 'electro', 'ASMR', 'rock', 'latino', 'afrobeat', 'opera', 'reggea', 'alternative', 'folx & acoustic', 'soul & funk', 'Jazz', 'arabic', 'asian', 'other']  %>
           <% when 'professional' %>
             <%= f.input :genre, collection: ['languages', 'desktop spreadsheet software', 'school/learning', 'work', 'other']  %>
-          <% when 'vpn' %>
+          <% else 'vpn' %>
             <%= f.input :genre, collection: ['vpn']  %>
       <% end %>
       <%= f.input :price_per_month, placeholder: "Price in €" %>
