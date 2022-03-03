@@ -11,4 +11,9 @@
     </div>
 
   </div>
+  <%= pie_chart(Service.group(:category).count,
+      colors: ["red", "black", "blue"],
+      donut: true,
+      fontColor: "yellow",
+      legend: "top") %>
 </div>
