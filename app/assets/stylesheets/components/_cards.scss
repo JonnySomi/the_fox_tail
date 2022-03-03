@@ -21,6 +21,15 @@
   box-shadow: 1px 1px 1px rgb(2, 0, 0);
 }
 
+.card-category img {
+  height: 100%;
+  width: 160px;
+  object-fit: cover;
+}
+
+
+
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
