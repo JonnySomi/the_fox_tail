@@ -5,7 +5,6 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-
   end
 
   def user_details
