@@ -7,7 +7,14 @@
   <div class="services">
     <div class=" mt-3 cards">
       <% services.each do |service| %>
-        <%= render 'service_infos.html', service: service %>
+        <a href="<%= new_service_user_service_path(service)  %>"><div class="card-category" style="text-align: center">
+            <% if service.photo.attached? %>
+              <%= cl_image_tag service.photo.key, class: "card-category-image" %>
+            <% else %>
+              <%= image_tag 'logo.png', class: "card-category-image" %>
+            <% end %>
+          <h2><%= service.name%></h2>
+       </div></a>
       <% end %>
     </div>
   </div>
