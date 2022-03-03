@@ -40,6 +40,7 @@
   padding: 100px 0;
 }
 
+
 .cards-2-homepage {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -56,8 +57,8 @@
   box-shadow: 0.5px 0.5px 0.5px #3c1900;;
   height: 300px;
   width: 250px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .cards-2-homepage-design:hover {
@@ -69,4 +70,41 @@
   font-size: 18px;
   color:#ca5310;
   text-align: center;
+}
+
+.cards-3-homepage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.cards-3-homepage-design {
+  background-size: cover;
+  background-position: center;
+  background-color: #ca5310;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 3px #3c1900;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #3c1900;
+  height: 350px;
+  width: 280px;
+  margin: 30px;
+  box-shadow: 1px 1px 1px #3c1900;
+}
+
+.cards-3-homepage-design:hover {
+  box-shadow: 0 0 15px #3c1900;
+}
+
+.howtxt {
+  margin-top: 15px;
+  font-size: 30px;
+  color:#ca5310;
+}
+
+.txt3 {
+  font-size: 20px;
+  color: #fef1e1;
 }
