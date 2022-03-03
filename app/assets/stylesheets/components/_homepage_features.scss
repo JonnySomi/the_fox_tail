@@ -33,11 +33,17 @@
 }
 
 .container-2{
-  background-color: #282b28;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.9;
-  padding: 100px 0;
+  position: relative;
+  height: 375px;
+  background-image: linear-gradient(#282b28, #282b28);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+  );
+  opacity: 0.8;
+  /* change the calc height to a percentage height to get alternate responsive behavior*/
 }
 
 
@@ -67,16 +73,17 @@
 
 .txt2 {
   text-shadow: 1px 1px 3px #3c1900;
-  font-size: 18px;
+  font-size: 23px;
   color:#ca5310;
   text-align: center;
 }
 
-.cards-3-homepage {
+.cards-intro-home {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
 }
+
 
 .cards-3-homepage-design {
   background-size: cover;
@@ -88,10 +95,11 @@
   text-shadow: 1px 1px 3px #3c1900;
   border-radius: 5px;
   box-shadow: 0 0 15px #3c1900;
-  height: 350px;
-  width: 280px;
+  height: 180px;
+  width: 350px;
   margin: 30px;
   box-shadow: 1px 1px 1px #3c1900;
+  padding: 30px;
 }
 
 .cards-3-homepage-design:hover {
@@ -99,17 +107,12 @@
 }
 
 .howtxt {
-  margin-top: 15px;
+  padding: 50px;
   font-size: 30px;
-  color:#ca5310;
+  color:#3c1900;
 }
 
 .txt3 {
   font-size: 20px;
   color: #fef1e1;
-}
-
-.cards-intro-home {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }

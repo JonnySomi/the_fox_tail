@@ -8,6 +8,8 @@
 
 
 .txta {
+  padding-top: 50px;
+  padding-bottom: 1px;
   color:#282b28;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 43px;
@@ -16,10 +18,12 @@
 }
 
 .txtb {
+  padding-top: 50px;
   font-size: 28px;
   color: #fef1e1;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   text-align: center;
+  // margin-top: -150px;
 }
 
 .header .btn-banner {
@@ -28,12 +32,11 @@
   color:  #fef1e1;
   text-decoration: none;
   border-radius: 17px;
-  margin-top: 20px;
   box-shadow: 0.9px 0.9px 1.1px #282b28;
   opacity: 0.7;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  position: absolute;
 }
+
 .header .btn-banner:hover {
   opacity: 1;
   color: #fef1e1;
