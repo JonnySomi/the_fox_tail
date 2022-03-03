@@ -31,17 +31,29 @@ user_4 = User.create!(email: "corentin@gmail.com", password: "123123", first_nam
 user_4.photo.attach(io: file, filename: 'profile4.jpeg', content_type: 'image/jpeg')
 user_4.save
 
-streaming = Service.new(name: "Netflix", photo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRlY2dejgtzP0TzCqGj_GGJt2g242KBrzptIZQfoHonX1gSvvqUGKkGF0uxk2dgsn_6Eo&usqp=CAU" , category: "Streaming" )
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRlY2dejgtzP0TzCqGj_GGJt2g242KBrzptIZQfoHonX1gSvvqUGKkGF0uxk2dgsn_6Eo&usqp=CAU")
+streaming = Service.new(name: "Netflix", category: "Streaming" )
+streaming.photo.attach(io: file, filename: 'service1.jpeg', content_type: 'image/jpeg')
 streaming.save
-media = Service.new(name: "Le Figaro", photo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL56wFeRUr73Ig8UzmwWhYaoALsVoymVJ_-w&usqp=CAU" , category: "Media" )
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL56wFeRUr73Ig8UzmwWhYaoALsVoymVJ_-w&usqp=CAU")
+media = Service.new(name: "Le Figaro", category: "Media" )
+media.photo.attach(io: file, filename: 'service2.jpeg', content_type: 'image/jpeg')
 media.save
-video_games = Service.new(name: "Xbox Game Pass", photo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyPkbv8ze0rFfZ9BxK6YdMWf1iKyVF0oidGg&usqp=CAU" , category: "Video Games" )
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyPkbv8ze0rFfZ9BxK6YdMWf1iKyVF0oidGg&usqp=CAU")
+video_games = Service.new(name: "Xbox Game Pass", category: "Video Games" )
+video_games.photo.attach(io: file, filename: 'service3.jpeg', content_type: 'image/jpeg')
 video_games.save
-music = Service.new(name: "Spotify", photo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCBmnbqB2U3X8Md-RvAGMGtm9syclTVXqIRA&usqp=CAU" , category: "Music" )
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCBmnbqB2U3X8Md-RvAGMGtm9syclTVXqIRA&usqp=CAU")
+music = Service.new(name: "Spotify", category: "Music" )
+music.photo.attach(io: file, filename: 'service4.jpeg', content_type: 'image/jpeg')
 music.save
-professional = Service.new(name: "Odoo", photo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-KtfhprOdt7dtWbIk3EpnQCxjo-Kg2CoQg&usqp=CAU" , category: "Professional" )
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-KtfhprOdt7dtWbIk3EpnQCxjo-Kg2CoQg&usqp=CAU")
+professional = Service.new(name: "Odoo", category: "Professional" )
+professional.photo.attach(io: file, filename: 'service5.jpeg', content_type: 'image/jpeg')
 professional.save
-vpn = Service.new(name: "NordVPN", photo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzWyTGnmMwa1v5rlaRKqLLWhrCqGq7088Vw&usqp=CAU" , category: "VPN" )
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzWyTGnmMwa1v5rlaRKqLLWhrCqGq7088Vw&usqp=CAU")
+vpn = Service.new(name: "NordVPN", category: "VPN" )
+vpn.photo.attach(io: file, filename: 'service6.jpeg', content_type: 'image/jpeg')
 vpn.save
 
 UserService.create!(user_id: user_1[:id], service_id: streaming[:id], price_per_month: 14, hour_spent_per_month: 25, genre: "Comedy", start_date: Date.new(2017,3,6))

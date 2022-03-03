@@ -1,3 +1,82 @@
-.form-container {
-  margin-top: 20px;
+
+.form-login {
+  background: white;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 93px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
   }
+  img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 20px
+  }
+}
+
+.form-edit {
+  background: white;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 93px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 20px
+  }
+}
+
+
+.form-new {
+  background: white;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 93px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 20px
+  }
+}
