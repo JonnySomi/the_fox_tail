@@ -1,0 +1,16 @@
+.card-show {
+  border-radius: 2%;
+  box-shadow: 3px 4px #282b285d;
+  background-color: #ffffffdc;
+  position: relative;
+}
+
+.card-show-body {
+  height: calc(100% - 150px);
+}
+
+.card-position-relative {
+  position: absolute;
+  left: -35px;
+  top: -35px;
+}
