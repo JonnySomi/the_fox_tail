@@ -3,6 +3,10 @@ class UserServicesController < ApplicationController
     @user_services = UserService.all
   end
 
+  def show
+    find_user_service
+  end
+
   def new
     @user_service = UserService.new
     @service = Service.find(params[:service_id])
