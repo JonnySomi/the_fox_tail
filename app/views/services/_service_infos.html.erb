@@ -3,7 +3,11 @@
     <div class="card-container">
       <div class="cards">
         <div class="card-category" style="text-align: center">
-          <%= image_tag service.photo_url, class: "card-category-image" %>
+          <% if service.photo.attached? %>
+            <%= cl_image_tag service.photo.key, class: "card-category-image" %>
+          <% else %>
+            <%= image_tage 'logo.png', class: "card-category-image" %>
+          <% end %>
           <h2><%= service.name%></h2>
         </div>
       </div>
