@@ -108,3 +108,8 @@
   font-size: 20px;
   color: #fef1e1;
 }
+
+.cards-intro-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
