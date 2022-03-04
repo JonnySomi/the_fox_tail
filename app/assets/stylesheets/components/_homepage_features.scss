@@ -1,0 +1,124 @@
+.textwelcome {
+  font-size: 27px;
+  color: #ca5310;
+}
+
+.image {
+  margin-top: 2px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.txt1{
+  text-align: center;
+  font-size: 20px;
+  color:#3c1900;
+}
+.cards-1-homepage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.cards-1-homepage-design {
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 250px;
+  width: 180px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.container-2{
+  position: relative;
+  height: 420px;
+  background-image: linear-gradient(#282b28, #282b28);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+  );
+  opacity: 0.8;
+  /* change the calc height to a percentage height to get alternate responsive behavior*/
+}
+
+
+.cards-2-homepage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.cards-2-homepage-design {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0.8px 0.8px 0.8px #3c1900;;
+  height: 300px;
+  width: 400px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.cards-2-homepage-design:hover {
+  box-shadow: 2px 2px 4px #3c1900;
+}
+
+.txt2header {
+  font-size: bold;
+  font-size: 25px;
+  color:#fef1e1;
+}
+
+.txt2 {
+  text-shadow: 1px 1px 3px #3c1900;
+  font-size: 23px;
+  color:#ca5310;
+  text-align: center;
+}
+
+.cards-intro-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+.cards-3-homepage-design {
+  background-size: cover;
+  background-position: center;
+  background-color: #ca5310;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 3px #3c1900;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #3c1900;
+  height: 180px;
+  width: 350px;
+  margin-bottom: 80px;
+  box-shadow: 1px 1px 1px #3c1900;
+  padding: 30px;
+}
+
+.cards-3-homepage-design:hover {
+  box-shadow: 0 0 15px #3c1900;
+}
+
+.howtxt {
+  padding: 50px;
+  font-size: 30px;
+  color:#3c1900;
+}
+
+.txt3 {
+  font-size: 20px;
+  color: #fef1e1;
+}
