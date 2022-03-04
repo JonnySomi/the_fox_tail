@@ -9,11 +9,12 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-sm-4">
-      <div class="form-searchbar">
-        <div data-controller="search-services">
+
+<div data-controller="search-services">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4">
+        <div class="form-searchbar">
           <%= form_with url: services_path, method: :get, html: { class:
             'mb-4', data: { search_services_target: 'form' } } do |f| %>
             <%= f.text_field :query,
@@ -27,5 +28,5 @@
       </div>
     </div>
   </div>
+  <%= render 'list', services: @services %>
 </div>
-          <%= render 'list', services: @services %>
