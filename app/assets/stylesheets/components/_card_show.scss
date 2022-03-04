@@ -5,13 +5,11 @@
 .card-service-info {
   border-radius: 4%;
   box-shadow: 3px 4px #282b285d;
-  background-color: #ffffffdc;
 }
 
 .card-service-payment {
   border-radius: 15px;
   box-shadow: 3px 4px #282b285d;
-  background-color: #ffffffdc;
   span {
     color: #ca5310;
   }
@@ -19,6 +17,11 @@
 
 .card-show-body {
   height: calc(100% - 150px);
+
+  h4{
+    color: #fef1e1;
+  }
+
   p {
     color: #ca5310;
   }
