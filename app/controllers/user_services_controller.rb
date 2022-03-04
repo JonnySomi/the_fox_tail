@@ -24,6 +24,19 @@ class UserServicesController < ApplicationController
     end
   end
 
+  def edit
+    find_user_service
+  end
+
+  def update
+    find_user_service
+    if @user_service.update(user_service_params)
+      redirect_to user_service_path(@user_service)
+    else
+      render :new
+    end
+  end
+
   def destroy
     @user_service = UserService.find(params[:id])
     @user_service.destroy
