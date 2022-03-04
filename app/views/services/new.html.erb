@@ -1,6 +1,17 @@
-<%= simple_form_for(@service) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
-  <%= f.input :category, collection: ["Streaming", "Media", "Video Games", "Music", "Professional", "VPN"] %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-4">
+      <div class="form-new">
+        <%= image_tag("logo.png") %><h2>Create a new service to track</h2>
+          <%= simple_form_for(@service) do |f| %>
+          <%= f.input :name %>
+          <%= f.input :photo, as: :file %>
+          <%= f.input :category, collection: ["Streaming", "Media", "Video Games", "Music", "Professional", "VPN"] %>
+            <div class="form-actions">
+              <%= f.button :submit, "Add a new service" %>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

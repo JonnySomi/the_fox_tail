@@ -4,7 +4,7 @@
     <div class="textwelcome" style="text-align: center">
       <p class="text2">Subscription services you can track</p>
       <h1 class="welcometext"><span> Check these out! </span></h1>
-      <%= link_to "Add a new service", new_service_path(@service), class:"button" %>
+      <%= link_to "Add a new service", new_service_path(@service), class:"btn" %>
     </div>
     <div data-controller="search-services">
       <%= form_with url: services_path, method: :get, html: { class:

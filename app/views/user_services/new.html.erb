@@ -1,28 +1,37 @@
-<div class="container pt-5">
-  <%= simple_form_for [@service, @user_service] do |f| %>
-      <%# <%= f.input :api_key, class: '' %>
-      <%= f.input :hour_spent_per_month, placeholder: "Number of hours"  %>
-      <%= f.input :start_date, placeholder: "When did you start your subscription?" %>
-        <% case @service.category %>
-          <% when 'streaming' %>
-            <%= f.input :genre, collection: ['Action', 'Comedy', 'Drama', 'Fantasy', 'Horror/mystery', 'Romance', 'Thriller', 'kids/family', 'documentary', 'stand up', 'other']  %>
-          <% when 'media' %>
-            <%= f.input :genre, collection: ['Politic', 'Ecology/Nature', 'Business/Finance', 'Caricature', 'Kids', 'Fashion', 'Lifestyle/DIY', 'Sport', 'other']  %>
-          <% when 'Video Games' %>
-            <%= f.input :genre, collection: ['Survavil/Horror/War', 'Simulation/Sports', 'Strategy/Logic/Education', 'Action/Adventure', 'Kids', 'Family', 'other' ]  %>
-          <% when 'Music' %>
-            <%= f.input :genre, collection: ['pop', 'rap', 'rnb', 'classic', 'electro', 'ASMR', 'rock', 'latino', 'afrobeat', 'opera', 'reggea', 'alternative', 'folx & acoustic', 'soul & funk', 'Jazz', 'arabic', 'asian', 'other']  %>
-          <% when 'professional' %>
-            <%= f.input :genre, collection: ['languages', 'desktop spreadsheet software', 'school/learning', 'work', 'other']  %>
-          <% when 'vpn' %>
-            <%= f.input :genre, collection: ['vpn']  %>
-      <% end %>
-      <%= f.input :price_per_month, placeholder: "Price in €" %>
-      <div class="container d-flex">
-        <div class="flex" style="width: 360px; justify-content: space-between;">
-          <%= f.submit class:'btn'%>
-          <%= link_to 'Cancel', services_path, class:'btn' %>
-        </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-4">
+      <div class="form-new">
+        <%= image_tag("logo.png") %><h2>Add this service to track</h2>
+                  <div class="container pt-5">
+            <%= simple_form_for [@service, @user_service] do |f| %>
+                <%# <%= f.input :api_key, class: '' %>
+                <%= f.input :hour_spent_per_month, placeholder: "Number of hours"  %>
+                <%= f.input :start_date, placeholder: "When did you start your subscription?" %>
+                  <% case @service.category %>
+                    <% when 'Streaming' %>
+                      <%= f.input :genre, collection: ['Action', 'Comedy', 'Drama', 'Fantasy', 'Horror/mystery', 'Romance', 'Thriller', 'kids/family', 'documentary', 'stand up', 'other']  %>
+                    <% when 'Media' %>
+                      <%= f.input :genre, collection: ['Politic', 'Ecology/Nature', 'Business/Finance', 'Caricature', 'Kids', 'Fashion', 'Lifestyle/DIY', 'Sport', 'other']  %>
+                    <% when 'Video Games' %>
+                      <%= f.input :genre, collection: ['Survavil/Horror/War', 'Simulation/Sports', 'Strategy/Logic/Education', 'Action/Adventure', 'Kids', 'Family', 'other' ]  %>
+                    <% when 'Music' %>
+                      <%= f.input :genre, collection: ['pop', 'rap', 'rnb', 'classic', 'electro', 'ASMR', 'rock', 'latino', 'afrobeat', 'opera', 'reggea', 'alternative', 'folx & acoustic', 'soul & funk', 'Jazz', 'arabic', 'asian', 'other']  %>
+                    <% when 'Professional' %>
+                      <%= f.input :genre, collection: ['languages', 'desktop spreadsheet software', 'school/learning', 'work', 'other']  %>
+                    <% else %>
+                      <%= f.input :genre, collection: ['vpn']  %>
+                <% end %>
+                <%= f.input :price_per_month, placeholder: "Price in €" %>
+                <div class="container d-flex justify-content-center text-center pb-5">
+                  <div class="flex" style="width: 360px; justify-content: space-between;">
+                    <%= f.submit class:'btn'%>
+                    <%= link_to 'Cancel', services_path, class:'btn' %>
+                  </div>
+                </div>
+            <% end %>
+          </div>
       </div>
-  <% end %>
+    </div>
+  </div>
 </div>

@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   resources :services, only: %i[index new create] do
     resources :user_services, only: %i[new create]
   end
-  resources :user_services, only: %i[show]
+  resources :user_services, only: %i[show destroy edit update]
 end
