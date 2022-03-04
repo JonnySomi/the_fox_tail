@@ -9,17 +9,17 @@
                 <%= f.input :hour_spent_per_month, placeholder: "Number of hours"  %>
                 <%= f.input :start_date, placeholder: "When did you start your subscription?" %>
                   <% case @service.category %>
-                    <% when 'streaming' %>
+                    <% when 'Streaming' %>
                       <%= f.input :genre, collection: ['Action', 'Comedy', 'Drama', 'Fantasy', 'Horror/mystery', 'Romance', 'Thriller', 'kids/family', 'documentary', 'stand up', 'other']  %>
-                    <% when 'media' %>
+                    <% when 'Media' %>
                       <%= f.input :genre, collection: ['Politic', 'Ecology/Nature', 'Business/Finance', 'Caricature', 'Kids', 'Fashion', 'Lifestyle/DIY', 'Sport', 'other']  %>
                     <% when 'Video Games' %>
                       <%= f.input :genre, collection: ['Survavil/Horror/War', 'Simulation/Sports', 'Strategy/Logic/Education', 'Action/Adventure', 'Kids', 'Family', 'other' ]  %>
                     <% when 'Music' %>
                       <%= f.input :genre, collection: ['pop', 'rap', 'rnb', 'classic', 'electro', 'ASMR', 'rock', 'latino', 'afrobeat', 'opera', 'reggea', 'alternative', 'folx & acoustic', 'soul & funk', 'Jazz', 'arabic', 'asian', 'other']  %>
-                    <% when 'professional' %>
+                    <% when 'Professional' %>
                       <%= f.input :genre, collection: ['languages', 'desktop spreadsheet software', 'school/learning', 'work', 'other']  %>
-                    <% else 'vpn' %>
+                    <% else %>
                       <%= f.input :genre, collection: ['vpn']  %>
                 <% end %>
                 <%= f.input :price_per_month, placeholder: "Price in €" %>
