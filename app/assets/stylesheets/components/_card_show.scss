@@ -1,12 +1,27 @@
 .card-show {
-  border-radius: 2%;
+  position: relative;
+}
+
+.card-service-info {
+  border-radius: 4%;
   box-shadow: 3px 4px #282b285d;
   background-color: #ffffffdc;
-  position: relative;
+}
+
+.card-service-payment {
+  border-radius: 15px;
+  box-shadow: 3px 4px #282b285d;
+  background-color: #ffffffdc;
+  span {
+    color: #ca5310;
+  }
 }
 
 .card-show-body {
   height: calc(100% - 150px);
+  p {
+    color: #ca5310;
+  }
 }
 
 .card-position-relative {

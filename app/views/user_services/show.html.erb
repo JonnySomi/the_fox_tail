@@ -27,7 +27,7 @@
           <div class="container" style="height: 90vh;">
             <div class="p-6 w-full h-full" style="width: 100%; height: 100%">
               <!--Metric Card-->
-              <div class="card-show bg-white border border-black p-2 m-3 " style="width: 100%; height: 95%">
+              <div class="card-show p-2 m-3 " style="width: 100%; height: 95%">
                   <div class="card-position-relative rounded-full">
                     <%= cl_image_tag @user_service.service.photo.key, style: "object-fit: cover; border-radius: 50%; height: 150px; width: 150px;" %>
                   </div>
@@ -37,32 +37,33 @@
                 <div class="card-show-body p-3 justify-content-center">
                   <div class="flex-1 text-center" style="height: 100%">
                     <div class="d-flex justify-content-around" style="height: 70%">
-                      <div class="d-flex flex-column justify-center mr-5">
-                        <h3 class="font-bold text-3xl p-2"> Prices</h3>
+                      <div class="card-service-info d-flex flex-column justify-center p-4">
+                        <h3 class="font-bold text-3xl p-2">Prices:</h3>
                         <p class="font-bold text-2xl p-2"><%= @user_service.price_per_month %>€/month</p>
                         <p class="font-bold text-2xl p-2"><%= @user_service.price_per_month * 12 %>€/year</p>
+                        <h4 class="font-bold text-2xl p-2">Total amount paid:</h4>
                         <p class="font-bold text-2xl p-2 justify-center"><%= @user_service.amount_paid %>€</p>
                       </div>
-                      <div class="d-flex flex-column justify-center border-end border-black">
-                        <% "" %>
-                      </div>
-                      <div class="d-flex flex-column justify-center">
-                        <h3 class="font-bold text-3xl p-2">Hours</h3>
+                      <div class="card-service-info d-flex flex-column justify-center p-4">
+                        <h3 class="font-bold text-3xl p-2">Hours:</h3>
                         <p class="font-bold text-2xl p-2"><%= @user_service.hour_spent_per_month %>h/month </p>
                         <p class="font-bold text-2xl p-2"><%= @user_service.hour_spent_per_month * 12%>h/year </p>
+                        <h4 class="font-bold text-2xl p-2">Total hours spent:</h4>
                         <p class="font-bold text-2xl p-2"><%= @user_service.subscription_time * @user_service.hour_spent_per_month%>h </p>
                       </div>
                     </div>
-                    <div class="d-flex flex-column justify-center">
-                      <p class="font-bold text-2xl p-2">Payement due for : <%= @user_service.due_date %></p>
+                    <div class="card-service-payment align-items-start flex-column d-flex m-5">
+                      <h4 class="justify-content-start font-bold text-2xl p-2 ml-3">Payement due in <span><%= @user_service.due_date %></span> days</h4>
+                      <h4 class="justify-content-start font-bold text-2xl p-2 ml-3">Subscribed since the: <span><%= @user_service.start_date %></span></h4>
+                    </div>
+                    <div class="align-items-start justify-content-start flex-column d-flex ml-5 pl-5">
+                    <%= link_to "Delete", user_service_path(@user_service), method: :delete, data: { confirm: "Are you sure you want to delete this Service?"}, class: "btn ml-3" %>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--/Metric Card-->
             </div>
           </div>
-          <%= link_to "Delete", user_service_path(@user_service), method: :delete, data: { confirm: "Are you sure you want to delete this Service?"}, class: "btn" %>
         </div>
       </section>
   </div>
