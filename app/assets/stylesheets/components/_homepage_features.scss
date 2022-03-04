@@ -34,7 +34,7 @@
 
 .container-2{
   position: relative;
-  height: 375px;
+  height: 420px;
   background-image: linear-gradient(#282b28, #282b28);
   clip-path: polygon(
     0 0,
@@ -49,7 +49,7 @@
 
 .cards-2-homepage {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
 }
 
@@ -60,15 +60,22 @@
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  box-shadow: 0.5px 0.5px 0.5px #3c1900;;
+  box-shadow: 0.8px 0.8px 0.8px #3c1900;;
   height: 300px;
-  width: 250px;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 400px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .cards-2-homepage-design:hover {
-  box-shadow: 0 0 15px #3c1900;
+  box-shadow: 2px 2px 4px #3c1900;
+}
+
+.txt2header {
+  font-size: bold;
+  font-size: 25px;
+  color:#fef1e1;
+  font-family: Curlz MT;
 }
 
 .txt2 {
