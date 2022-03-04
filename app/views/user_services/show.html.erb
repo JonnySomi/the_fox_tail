@@ -62,8 +62,7 @@
               <!--/Metric Card-->
             </div>
           </div>
+          <%= link_to "Delete", user_service_path(@user_service), method: :delete, data: { confirm: "Are you sure you want to delete this Service?"}, class: "btn" %>
         </div>
       </section>
   </div>
-
-<%= link_to "Delete", user_service_path(@user_service), method: :delete, data: { confirm: "Are you sure you want to delete this Service?"}, class: "btn" %>
