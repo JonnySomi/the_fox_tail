@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_03_094723) do
+ActiveRecord::Schema.define(version: 2022_03_04_083417) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,7 +51,6 @@ ActiveRecord::Schema.define(version: 2022_03_03_094723) do
   end
 
   create_table "user_services", force: :cascade do |t|
-    t.string "api_key"
     t.bigint "user_id", null: false
     t.bigint "service_id", null: false
     t.datetime "created_at", precision: 6, null: false
