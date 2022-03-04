@@ -75,7 +75,6 @@
   font-size: bold;
   font-size: 25px;
   color:#fef1e1;
-  font-family: Curlz MT;
 }
 
 .txt2 {
@@ -87,7 +86,7 @@
 
 .cards-intro-home {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
 
@@ -104,7 +103,7 @@
   box-shadow: 0 0 15px #3c1900;
   height: 180px;
   width: 350px;
-  margin: 30px;
+  margin-bottom: 80px;
   box-shadow: 1px 1px 1px #3c1900;
   padding: 30px;
 }
