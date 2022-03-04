@@ -7,11 +7,21 @@ nav {
 
   a {
     color: #fef1e1;
-
-    :hover{
-      opacity: 0.7;
-    }
   }
+
+  a:hover {
+    opacity: 0.7;
+    color: #fef1e1;
+  }
+}
+
+
+
+
+.active {
+  border-bottom: #ca5310 solid 1px;
+  border-right: #ca5310 solid 1px;
+  border-radius: 2%;
 }
 
 .title {
