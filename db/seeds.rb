@@ -9,9 +9,9 @@
 require 'open-uri'
 
 puts "Wiping seeds"
-User.destroy_all
-Service.destroy_all
 UserService.destroy_all
+Service.destroy_all
+User.destroy_all
 puts "Creating seeds"
 
 file = URI.open('https://avatars.githubusercontent.com/u/96981009?v=4')
