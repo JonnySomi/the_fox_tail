@@ -24,6 +24,13 @@ class UserServicesController < ApplicationController
     end
   end
 
+  def destroy
+    @user_service = UserService.find(params[:id])
+    @user_service.destroy
+    redirect_to dashboard_path(current_user)
+  end
+
+
   private
 
   def find_user_service
