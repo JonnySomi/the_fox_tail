@@ -15,9 +15,8 @@ class UserService < ApplicationRecord
   end
 
   def due_date
-    pay_date = start_date + 1.month
-    # raise
-    return pay_date
+    next_paying_day = start_date.day - Date.today.day
+    return next_paying_day
   end
 
 end
