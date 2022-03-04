@@ -6,18 +6,26 @@
       <h1 class="welcometext"><span> Check these out! </span></h1>
       <%= link_to "Add a new service", new_service_path(@service), class:"btn" %>
     </div>
-    <div data-controller="search-services">
-      <%= form_with url: services_path, method: :get, html: { class:
-        'mb-4', data: { search_services_target: 'form' } } do |f| %>
-        <%= f.text_field :query,
-                        class: "form-control",
-                        placeholder: 'Type a service name',
-                        data: { action: 'keyup->search-services#update', search_services_target: 'searchInput' },
-                        value: params[:query]
-                        %>
+  </div>
+</div>
 
-      <% end %>
-      <%= render 'list', services: @services %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-4">
+      <div class="form-searchbar">
+        <div data-controller="search-services">
+          <%= form_with url: services_path, method: :get, html: { class:
+            'mb-4', data: { search_services_target: 'form' } } do |f| %>
+            <%= f.text_field :query,
+                            class: "form-control",
+                            placeholder: 'Type a service name',
+                            data: { action: 'keyup->search-services#update', search_services_target: 'searchInput' },
+                            value: params[:query]
+                            %>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+          <%= render 'list', services: @services %>

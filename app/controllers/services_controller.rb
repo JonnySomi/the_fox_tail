@@ -23,7 +23,7 @@ class ServicesController < ApplicationController
     @service = Service.new(service_params)
     #@service.user = current_user
     if @service.save
-      redirect_to services_path
+      redirect_to new_service_user_service_path(@service)
     else
       render :new
     end
