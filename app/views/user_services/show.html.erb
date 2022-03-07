@@ -62,6 +62,7 @@
                       </div>
                     </div>
                     <div class="card-service-payment align-items-start flex-column bg-gradient-to-r from-red-900 to-gray-900 d-flex m-5">
+                      <h4 class="justify-content-start font-bold text-2xl p-2 ml-3">You currently pay <span><%= (@user_service.price_per_month.to_f / @user_service.hour_spent_per_month).round(2) %>€</span> / hour for this service</h4>
                       <h4 class="justify-content-start font-bold text-2xl p-2 ml-3">Payement due in <span><%= @user_service.due_date %></span> days</h4>
                       <h4 class="justify-content-start font-bold text-2xl p-2 ml-3">Subscribed since the: <span><%= @user_service.start_date %></span></h4>
                     </div>
