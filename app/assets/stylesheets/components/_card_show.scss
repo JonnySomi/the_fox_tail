@@ -33,10 +33,13 @@
   top: -35px;
 }
 
-.user-service-emoji {
+.fa-edit {
   font-size: 30px;
+  color: #282b28;
+  opacity: 0.8;
   &:hover {
-    font-size: 36px;
+    color: #282b28;
+    opacity: 1;
   }
 
 }

@@ -60,7 +60,9 @@
                       <div class="card-body">
                         <div class="row d-flex" style="height: 15%">
                           <div class="col-sm-12 d-flex justify-content-end pr-5">
-                            <%= link_to "✏️", edit_user_registration_path(current_user), class: "user-details-emoji" %>
+                          <%= link_to edit_user_registration_path(current_user) do %>
+                            <i class="fas fa-edit"></i>
+                          <% end%>
                             <%# <a class="btn btn-info" target="__blank" href="">Make it shine!</a> %>
                           </div>
                         </div>
