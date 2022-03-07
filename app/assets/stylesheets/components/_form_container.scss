@@ -90,6 +90,7 @@
   .btn {
     width: 100%;
     margin-bottom: 20px
+
   }
   .btn-delete {
     background-color: #282b28;
@@ -97,6 +98,7 @@
     opacity: 0.8 ;
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 11px;
     &:hover {
       color: #ca5310;
       opacity: 1;
@@ -128,5 +130,16 @@
   .btn {
     width: 100%;
     margin-bottom: 20px
+  }
+}
+
+
+
+.form-actions {
+  .btn {
+    width: 50%;
+    margin-bottom: 20px;
+    display: block;
+    margin: auto;
   }
 }
