@@ -1,9 +1,11 @@
 <div data-search-services-target="list">
-  <% if params[:query].blank? %>
-    <h1 class="h3"><%= pluralize services.count, 'service' %> available</h1>
-  <% else %>
-    <h1 class="h3"><%= pluralize services.count, 'result' %> for <code><%= params[:query] %></code></h1>
-  <% end %>
+  <div class="results">
+    <% if params[:query].blank? %>
+      <h1 class="h3"><%= pluralize services.count, 'service' %> available</h1>
+    <% else %>
+      <h1 class="h3"><%= pluralize services.count, 'result' %> for <code><%= params[:query] %></code></h1>
+    <% end %>
+  </div>
   <div class="services">
     <div class=" mt-3 cards">
       <% services.each do |service| %>
