@@ -3,11 +3,11 @@
     <div class="col-12 col-sm-4">
       <div class="form-new">
         <%= image_tag("logo.png") %><h2>Add this service to track</h2>
-                  <div class="container pt-5">
+                  <div class="container pt-5" data-controller="flatpickr">
             <%= simple_form_for [@service, @user_service] do |f| %>
                 <%# <%= f.input :api_key, class: '' %>
                 <%= f.input :hour_spent_per_month, placeholder: "Number of hours"  %>
-                <%= f.input :start_date, placeholder: "When did you start your subscription?" %>
+                <%= f.input :start_date, as: :string, required: false, input_html: {class: "datepicker"} %>
                   <% case @service.category %>
                     <% when 'Streaming' %>
                       <%= f.input :genre, collection: ['Action', 'Comedy', 'Drama', 'Fantasy', 'Horror/mystery', 'Romance', 'Thriller', 'kids/family', 'documentary', 'stand up', 'other']  %>

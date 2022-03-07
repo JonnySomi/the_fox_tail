@@ -41,18 +41,22 @@
                 </div>
                 <div class="card-show-body p-3 justify-content-center">
                   <div class="flex-1 text-center" style="height: 100%">
-                    <div class="d-flex justify-content-around" style="height: 70%">
+                    <div class="d-flex justify-content-around" style="height: 70%" data-controller="month-to-year">
                       <div class="card-service-info d-flex flex-column justify-center bg-gradient-to-r from-red-900 to-gray-900 p-4">
                         <h4 class="font-bold text-3xl p-2">Prices:</h4>
-                        <p class="font-bold text-2xl p-2"><%= @user_service.price_per_month %>€/month</p>
-                        <p class="font-bold text-2xl p-2"><%= @user_service.price_per_month * 12 %>€/year</p>
+                        <p class="font-bold text-2xl p-2" data-month-to-year-target="monthprice"><%= @user_service.price_per_month %>€/month</p>
+                        <p class="font-bold text-2xl p-2 d-none" data-month-to-year-target="yearprice"><%= @user_service.price_per_month * 12 %>€/year</p>
                         <h4 class="font-bold text-2xl p-2">Total amount paid:</h4>
                         <p class="font-bold text-2xl p-2 justify-center"><%= @user_service.amount_paid %>€</p>
                       </div>
+                      <div class="d-flex align-items-center flex-column justify-center">
+                        <button class="btn d-none" data-month-to-year-target="month" data-action="click->month-to-year#displayMonth">MONTH</button>
+                        <button class="btn mx-2"data-month-to-year-target="year" data-action="click->month-to-year#displayYear">YEAR</button>
+                      </div>
                       <div class="card-service-info d-flex flex-column justify-center bg-gradient-to-r from-red-900 to-gray-900 p-4">
                         <h4 class="font-bold text-3xl p-2">Hours:</h4>
-                        <p class="font-bold text-2xl p-2"><%= @user_service.hour_spent_per_month %>h/month </p>
-                        <p class="font-bold text-2xl p-2"><%= @user_service.hour_spent_per_month * 12%>h/year </p>
+                        <p class="font-bold text-2xl p-2" data-month-to-year-target="monthtime"><%= @user_service.hour_spent_per_month %>h/month </p>
+                        <p class="font-bold text-2xl p-2 d-none" data-month-to-year-target="yeartime"><%= @user_service.hour_spent_per_month * 12%>h/year </p>
                         <h4 class="font-bold text-2xl p-2">Total hours spent:</h4>
                         <p class="font-bold text-2xl p-2"><%= @user_service.subscription_time * @user_service.hour_spent_per_month%>h </p>
                       </div>
