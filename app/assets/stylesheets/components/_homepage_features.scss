@@ -4,11 +4,6 @@
   font-family: 'Oxygen', sans-serif
 }
 
-.image {
-  margin-top: 2px;
-  text-align: center;
-  font-size: 50px;
-}
 .img1 {
   font-size: 60px;
   color: #3c1900;
@@ -75,10 +70,6 @@
   margin-right: 90px;
 }
 
-.cards-2-homepage-design:hover {
-  box-shadow: 2px 2px 4px #3c1900;
-}
-
 .txt2header {
   font-size: bold;
   font-size: 25px;
@@ -126,23 +117,22 @@
   margin-right: 90px;
 }
 
-.cards-3-homepage-design:hover {
-  box-shadow: 0 0 15px #ca5310;
-}
 
 .txt3header {
-  padding-top: 30px;
-  font-size: bold;
   font-size: 25px;
   color:#ca5310;
   text-shadow: 1px 1px 3px#ca5310;
+}
+
+.img3 {
+  font-size: 50px;
+  color:#ca5310;
 }
 .txt3 {
   font-size: 23px;
   color:#ca5310;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  padding-bottom: 30px;
 }
 
 .container-4 {
@@ -172,12 +162,8 @@
   height: 180px;
   width: 350px;
   margin-bottom: 80px;
-  box-shadow: 1px 1px 1px #ca5310;
+  box-shadow: 0 0 15px #ca5310;
 
-}
-
-.cards-4-homepage-design:hover {
-  box-shadow: 0 0 15px #ca5310;;
 }
 
 .howtxt {
