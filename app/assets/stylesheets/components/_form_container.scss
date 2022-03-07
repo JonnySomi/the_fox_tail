@@ -51,6 +51,17 @@
     width: 100%;
     margin-bottom: 20px
   }
+  .btn-delete {
+    background-color: #282b28;
+    color:  #fef1e1;
+    opacity: 0.8 ;
+    width: 100%;
+    margin-bottom: 20px;
+    &:hover {
+      color: #ca5310;
+      opacity: 1;
+    }
+  }
 }
 
 
@@ -79,6 +90,17 @@
   .btn {
     width: 100%;
     margin-bottom: 20px
+  }
+  .btn-delete {
+    background-color: #282b28;
+    color:  #fef1e1;
+    opacity: 0.8 ;
+    width: 100%;
+    margin-bottom: 20px;
+    &:hover {
+      color: #ca5310;
+      opacity: 1;
+    }
   }
 }
 
