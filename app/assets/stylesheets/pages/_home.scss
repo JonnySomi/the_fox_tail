@@ -1,4 +1,17 @@
 // Specific CSS for your home-page
 body {
-  background-color: #fef1e1;
+background-color: #fef1e1;
+
+  h1 {
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  a, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+  }
 }

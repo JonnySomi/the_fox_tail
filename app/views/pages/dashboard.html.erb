@@ -78,6 +78,7 @@
                       <h2 class="font-bold uppercase text-gray-600"><%= user_service.service.name %></h2>
                       <p class="font-bold text-3xl"><%= user_service.price_per_month %>€/month</p>
                       <p class="font-bold text-3xl"><%= user_service.hour_spent_per_month %>h/month</p>
+                      <p class="font-bold text-3xl"><%= (user_service.price_per_month.to_f / user_service.hour_spent_per_month).round(2) %> €/hour</p>
                     </div>
                   </div>
                 </div></a>
