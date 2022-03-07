@@ -74,11 +74,13 @@
                     <div class="flex-shrink pr-4">
                       <div class="rounded-full"><%= cl_image_tag user_service.service.photo.key, style: "object-fit: cover; border-radius: 50%; height: 100px; width: 100px;" %></div>
                     </div>
-                    <div class="flex-1 text-right md:text-center">
-                      <h2 class="font-bold uppercase text-gray-600"><%= user_service.service.name %></h2>
-                      <p class="font-bold text-3xl"><%= user_service.price_per_month %>€/month</p>
-                      <p class="font-bold text-3xl"><%= user_service.hour_spent_per_month %>h/month</p>
-                      <p class="font-bold text-3xl"><%= (user_service.price_per_month.to_f / user_service.hour_spent_per_month).round(2) %> €/hour</p>
+                    <div class="flex-1 text-right md:text-center" style="display: block; text-align-last: end;">
+                      <h2 class="font-bold uppercase"><%= user_service.service.name %></h2>
+                      <div class="pt-2">
+                        <p class="font-bold text-2xl"><span><%= user_service.price_per_month %>€</span> /month</p>
+                        <p class="font-bold text-2xl"><span><%= user_service.hour_spent_per_month %>h</span> /month</p>
+                      </div>
+                      <p class="font-bold text-2xl"><span><%= (user_service.price_per_month.to_f / user_service.hour_spent_per_month).round(2) %>€</span> /hour</p>
                     </div>
                   </div>
                 </div></a>
