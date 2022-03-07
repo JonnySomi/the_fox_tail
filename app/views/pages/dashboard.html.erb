@@ -39,7 +39,9 @@
                 <%= pie_chart(current_user.services.group(:category).count,
                               colors: ["#b30000", "#7c1158", "#4421af", "#1a53ff", "#0d88e6", "#00b7c7"],
                               donut: true,
-                              fontColor: "yellow",
+                              library: {
+                                fontSize: 40
+                              },
                               legend: "bottom",
                               height: "350px",
                               width: "400px") %>
