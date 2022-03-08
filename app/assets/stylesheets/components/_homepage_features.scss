@@ -36,7 +36,7 @@
 
 .container-2{
   position: relative;
-  height: 500px;
+  height: 420px;
   background-image: linear-gradient(#282b28, #282b28);
   clip-path: polygon(
     0 0,
@@ -98,9 +98,9 @@
 
 .container-3 {
   position: relative;
-  height: 500px;
+  height: 420px;
   background-color:#fef1e1;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .cards-3-homepage-design {
@@ -137,27 +137,15 @@
 
 .container-4 {
   background-color:#3c1900;
-  height: 500px;
+  height: 420px;
   opacity: 0.7;
-  padding-top: 15px;
-  flex-direction: column;
-
-  .text2 {
-    color: #fef1e1;
-    text-shadow: 1px 1px 3px #ca5310;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .container-btn {
-    padding-top: 25px;
-  }
+  padding-top: 40px;
 }
 .cards-intro-home {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 65px;
+  padding-top: 70px;
 }
 
 
@@ -173,6 +161,7 @@
   border-radius: 50px;
   height: 180px;
   width: 350px;
+  margin-bottom: 80px;
   box-shadow: 0 0 15px #ca5310;
 
 }
