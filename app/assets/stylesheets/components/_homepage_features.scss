@@ -12,10 +12,11 @@
 
 .txt1{
   text-align: center;
-  font-size: 22px;
+  font-size: 23px;
   color:#3c1900;
   font-family: 'Montserrat', sans-serif;
 }
+
 .cards-1-homepage {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -70,7 +71,7 @@
 
 .txt2header {
   font-size: bold;
-  font-size: 27px;
+  font-size: 28px;
   color:#fef1e1;
 }
 
@@ -82,7 +83,7 @@
 
 .txt2 {
   text-shadow: 1px 1px 3px #3c1900;
-  font-size: 25px;
+  font-size: 26px;
   color:#ca5310;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -117,7 +118,7 @@
 
 
 .txt3header {
-  font-size: 27px;
+  font-size: 28px;
   color:#ca5310;
   text-shadow: 1px 1px 3px#ca5310;
 }
@@ -126,8 +127,9 @@
   font-size: 50px;
   color:#ca5310;
 }
+
 .txt3 {
-  font-size: 25px;
+  font-size: 26px;
   color:#ca5310;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -150,6 +152,7 @@
     padding-top: 25px;
   }
 }
+
 .cards-intro-home {
   display: flex;
   justify-content: space-evenly;
@@ -157,7 +160,6 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
 
 .cards-4-homepage-design {
   background-size: cover;
@@ -172,7 +174,6 @@
   height: 190px;
   width: 360px;
   box-shadow: 0 0 15px #ca5310;
-
 }
 
 .howtxt {
