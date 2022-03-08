@@ -10,6 +10,7 @@
 .card-service-payment {
   border-radius: 15px;
   box-shadow: 3px 4px #282b285d;
+
   span {
     color: #ca5310;
   }
@@ -37,9 +38,9 @@
   font-size: 30px;
   color: #282b28;
   opacity: 0.8;
+
   &:hover {
     color: #282b28;
     opacity: 1;
   }
-
 }

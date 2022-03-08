@@ -1,4 +1,3 @@
-
 .btn {
   background-color: #ca5310;
   padding: 15px 23px;
@@ -8,11 +7,11 @@
   box-shadow: 0.9px 0.9px 1.1px #282b28;
   opacity: 0.7;
   font-family: 'Oxygen', sans-serif;
-}
 
-.btn:hover {
-  color: #3c1900;
-  opacity: 1;
+  &:hover {
+    color: #3c1900;
+    opacity: 1;
+  }
 }
 
 .btn-navbar {
@@ -20,9 +19,10 @@
   color:  #fef1e1;
   text-decoration: none;
   font-family: 'Oxygen', sans-serif;
-}
-.btn-navbar:hover {
-  color: #ca5310;
+
+  &:hover {
+    color: #ca5310;
+  }
 }
 
 .nav-link:hover {
@@ -37,6 +37,7 @@
   border-radius: 17px;
   box-shadow: 0.9px 0.9px 1.1px #282b28;
   opacity: 0.8 ;
+
   &:hover {
     color: #ca5310;
     opacity: 1;
