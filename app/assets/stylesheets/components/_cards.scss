@@ -19,16 +19,13 @@
   width: 280px;
   margin: 30px;
   box-shadow: 1px 1px 1px rgb(2, 0, 0);
+
+  img {
+    height: 100%;
+    width: 160px;
+    object-fit: cover;
+  }
 }
-
-.card-category img {
-  height: 100%;
-  width: 160px;
-  object-fit: cover;
-}
-
-
-
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

@@ -43,7 +43,6 @@ class UserServicesController < ApplicationController
     redirect_to dashboard_path(current_user)
   end
 
-
   private
 
   def find_user_service
