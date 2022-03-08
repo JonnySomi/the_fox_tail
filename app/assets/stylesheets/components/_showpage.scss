@@ -5,11 +5,35 @@
   justify-content: space-around;
   padding: 15px 10px;
   border-bottom: 0px solid #999;
+  background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
+  border-radius: 38%;
+  h4 {
+    color: #f1f1f1;
+    font-size: 33px;
+    line-height: 2rem;
+  }
+
 }
 
 .logodisplay{
   display: flex;
   justify-content: center;
+}
+
+.spandisplay{
+  span {
+    color: #ca5310;
+  }
+}
+.pictodisplay{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 41px;
+  span {
+    color: #ca5310;
+  }
 }
 
 .container {
@@ -108,7 +132,7 @@
           color: #f1f1f1;
         }
         p{
-          color:#f1f1f1;
+          color:#ca5310;
           font-weight: 300;
         }
       }
@@ -121,6 +145,7 @@
       align-items: flex-start;
       flex-wrap: wrap;
 
+
       .recent-payments {
         min-height: 50vh;
         flex: 5;
@@ -131,6 +156,9 @@
         flex-direction: column;
         background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
         border-radius: 4%;
+        h4 {
+          color: #f1f1f1;
+        }
       }
 
       .new-students {
@@ -143,6 +171,9 @@
         flex-direction: column;
         background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
         border-radius: 4%;
+        h4 {
+          color: #f1f1f1;
+        }
       }
     }
   }
@@ -153,6 +184,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+
 }
 
 @media screen and (max-width:536px) {

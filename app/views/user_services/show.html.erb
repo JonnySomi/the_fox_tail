@@ -99,7 +99,7 @@
       </div>
       <div class="card">
         <div class="box">
-          <h4 class="font-bold text-2xl p-2">Total amount paid:</h4>
+          <h4 class="font-bold text-3xl p-2">Total amount paid:</h4>
           <p class="font-bold text-2xl p-2 justify-center"><%= @user_service.amount_paid %>€</p>
         </div>
         <div class="icon-case">
@@ -120,7 +120,7 @@
       </div>
       <div class="card">
         <div class="box">
-          <h4 class="font-bold text-2xl p-2">Total hours spent:</h4>
+          <h4 class="font-bold text-3xl p-2">Total hours spent:</h4>
           <p class="font-bold text-2xl p-2"><%= @user_service.subscription_time * @user_service.hour_spent_per_month%>h </p>
         </div>
         <div class="icon-case">
@@ -137,9 +137,9 @@
           <div class="logodisplay">
             <%= cl_image_tag @user_service.service.photo.key, style: "object-fit: cover; border-radius: 50%; height: 200px; width: 200px;" %>
           </div>
-          <div>
-            <h4 class="justify-content-start font-bold text-2xl p-2 ml-3">You currently pay <span><%= (@user_service.price_per_month.to_f / @user_service.hour_spent_per_month).round(2) %>€</span> / hour for this service</h4>
-            <h4 class="justify-content-start font-bold text-2xl p-2 ml-3">Payement due in <span><%= @user_service.due_date %></span> days</h4>
+          <div class="spandisplay">
+            <h4 class="justify-content-start font-bold text-3xl p-2 ml-3">You currently pay <span><%= (@user_service.price_per_month.to_f / @user_service.hour_spent_per_month).round(2) %>€</span> / hour for this service</h4>
+            <h4 class="justify-content-start font-bold text-3xl p-2 ml-3">Payement due in <span><%= @user_service.due_date %></span> days</h4>
           </div>
         </div>
       </div>
@@ -147,9 +147,9 @@
         <div class="title">
           <h4>Subscription date</h4>
         </div>
-          <div>
+          <div class="pictodisplay">
             <i class="far fa-calendar-check" style="font-size: 100px; color:#f1f1f1"></i>
-            <h4 class="justify-content-start font-bold text-2xl p-2 ml-3">Subscribed since the: <span><%= @user_service.start_date %></span></h4>
+            <h4 class="justify-content-start font-bold text-3xl p-2 ml-3">Subscribed since the: <span><%= @user_service.start_date %></span></h4>
           </div>
       </div>
     </div>
