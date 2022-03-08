@@ -18,7 +18,7 @@ class UserService < ApplicationRecord
     if start_date.day > Date.today.day
       next_paying_day = start_date.day - Date.today.day
     else
-      if Date.today.month == 1 || Date.today.month == 3 || Date.today.month == 5 || Date.today.month == 6 || Date.today.month == 7 || Date.today.month == 8 || Date.today.month == 10 || Date.today.month == 12 ||
+      if Date.today.month == 1 || Date.today.month == 3 || Date.today.month == 5 || Date.today.month == 6 || Date.today.month == 7 || Date.today.month == 8 || Date.today.month == 10 || Date.today.month == 12
         next_paying_day = 31 - (Date.today.day - start_date.day)
       else
         next_paying_day = 30 - (Date.today.day - start_date.day)
@@ -28,11 +28,12 @@ class UserService < ApplicationRecord
   end
 
   def hours_spent
-    if start_date.month == Date.today.month && start_date.year == Date.today.year
+    if hour_spent_per_month.month == Date.today.month
       hours = 0
     else
       hours = hour_spent_per_month
     end
     return hours
   end
+
 end
