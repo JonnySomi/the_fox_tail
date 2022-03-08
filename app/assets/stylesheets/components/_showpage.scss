@@ -1,5 +1,5 @@
 
-.title {
+.title1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -103,7 +103,7 @@
     position: relative;
     margin-top: 10vh;
     min-height: 90vh;
-    background: #f1f1f1;
+    background: #fef1e1;
 
     .cards {
       padding: 20px 15px;
@@ -111,6 +111,7 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      background-color: #fef1e1;
 
 
       .card {
@@ -129,7 +130,7 @@
           padding-top: 3px;
         }
         h4 {
-          color: #f1f1f1;
+          color: #fef1e1;
         }
         p{
           color:#ca5310;
@@ -144,6 +145,7 @@
       justify-content: space-around;
       align-items: flex-start;
       flex-wrap: wrap;
+      background-color: #fef1e1;
 
 
       .recent-payments {
@@ -157,7 +159,7 @@
         background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
         border-radius: 4%;
         h4 {
-          color: #f1f1f1;
+          color: #fef1e1;
         }
       }
 
@@ -172,7 +174,7 @@
         background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
         border-radius: 4%;
         h4 {
-          color: #f1f1f1;
+          color: #fef1e1;
         }
       }
     }
