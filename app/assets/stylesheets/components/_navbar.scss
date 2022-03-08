@@ -1,10 +1,20 @@
 .navbar-lewagon {
   justify-content: end;
   background: #282b28 ;
-}
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+  .navbar-collapse {
+    flex-grow: 0;
+
+    .nav-link {
+      color: #fef1e1;
+    }
+  }
+
+  .navbar-brand {
+    img {
+      width: 40px;
+    }
+  }
 }
 
 .navbar-collapse {
@@ -12,17 +22,10 @@
   justify-content: end;
 }
 
-.navbar-lewagon .navbar-collapse .nav-link {
-  color: #fef1e1;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
 .navbar-logo {
   opacity:1;
   width: 40px;
+
   &:hover{
     opacity: 0.7;
   }

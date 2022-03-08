@@ -48,8 +48,6 @@
                           <%= cl_image_tag current_user.photo.key, class:'dashboard-avatar'%>
                           <div class="mt-3">
                             <h2 class="welcometext justify-center"><strong><%= current_user.first_name %></strong></h2>
-                            <%# <button class="btn btn-outline-primary">Contact</button> %>
-                            <%# need to display our form for edit profile here  %>
                           </div>
                         </div>
                       </div>
@@ -63,7 +61,6 @@
                           <%= link_to edit_user_registration_path(current_user) do %>
                             <i class="fas fa-edit"></i>
                           <% end%>
-                            <%# <a class="btn btn-info" target="__blank" href="">Make it shine!</a> %>
                           </div>
                         </div>
                         <div class="row d-flex align-items-center" style="height: 28%">
@@ -75,22 +72,21 @@
                           </div>
                         </div>
                         <hr>
-                          <div class="row d-flex align-items-center" style="height: 28%">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0 text2 details-text">Email</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                              <h6 class="user-details-text"><%= current_user.email %></h6>
-                            </div>
+                        <div class="row d-flex align-items-center" style="height: 28%">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0 text2 details-text">Email</h6>
                           </div>
-                           <hr>
-                          <div class="row d-flex align-items-center" style="height: 28%">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0 text2 details-text">Pseudo</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                               <h6 class="user-details-text"><%= current_user.pseudo %></h6>
-                            </div>
+                          <div class="col-sm-9 text-secondary">
+                            <h6 class="user-details-text"><%= current_user.email %></h6>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row d-flex align-items-center" style="height: 28%">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0 text2 details-text">Pseudo</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                             <h6 class="user-details-text"><%= current_user.pseudo %></h6>
                           </div>
                         </div>
                       </div>
