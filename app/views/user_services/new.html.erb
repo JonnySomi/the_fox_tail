@@ -9,13 +9,13 @@
             <%= f.input :start_date, as: :string, required: false, input_html: {class: "datepicker"} %>
             <% case @service.category %>
               <% when 'Streaming' %>
-                <%= f.input :genre, collection: ['Action', 'Comedy', 'Drama', 'Fantasy', 'Horror/mystery', 'Romance', 'Thriller', 'kids/family', 'documentary', 'stand up', 'other']  %>
+                <%= f.input :genre, collection: ['kids/family', 'movie/series', 'documentary', 'stand up', 'other']  %>
               <% when 'Media' %>
                 <%= f.input :genre, collection: ['Politic', 'Ecology/Nature', 'Business/Finance', 'Caricature', 'Kids', 'Fashion', 'Lifestyle/DIY', 'Sport', 'other']  %>
               <% when 'Video Games' %>
                 <%= f.input :genre, collection: ['Survavil/Horror/War', 'Simulation/Sports', 'Strategy/Logic/Education', 'Action/Adventure', 'Kids', 'Family', 'other' ]  %>
               <% when 'Music' %>
-                <%= f.input :genre, collection: ['pop', 'rap', 'rnb', 'classic', 'electro', 'ASMR', 'rock', 'latino', 'afrobeat', 'opera', 'reggea', 'alternative', 'folx & acoustic', 'soul & funk', 'Jazz', 'arabic', 'asian', 'other']  %>
+                <%= f.input :genre, collection: ['music', 'ASMR', 'other']  %>
               <% when 'Professional' %>
                 <%= f.input :genre, collection: ['languages', 'desktop spreadsheet software', 'school/learning', 'work', 'other']  %>
               <% else %>
