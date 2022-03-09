@@ -1,38 +1,40 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid d-flex">
+  <div class="container-fluid d-flex justify-content-between">
     <%= link_to image_tag("logo.png"), root_path, class: "navbar-logo" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class= "thetwobuttons" style = "width: 13%; margin-left: 1200px">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto justify-content-end" style = "width: 100%; display: flex">
-          <% if user_signed_in? %>
-            <div class="btn-navbar">
-              <li class="nav-item d-flex">
-                <%= link_to "Services", "/services", class: "nav-link" %>
+    <div class="d-flex">
+      <div class= "thetwobuttons" style="margin-right: 15px;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto justify-content-end" style = "width: 100%; display: flex">
+            <% if user_signed_in? %>
+              <div class="btn-navbar">
+                <li class="nav-item d-flex">
+                  <%= link_to "Services", "/services", class: "nav-link" %>
+                </li>
+              </div>
+              <div class="btn-navbar">
+                <li class="nav-item d-flex">
+                  <%= link_to "Dashboard", "/dashboard", class: "nav-link" %>
+                </li>
+              </div>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to "Login", new_user_session_path, class: "nav-link" %>
               </li>
-            </div>
-            <div class="btn-navbar">
-              <li class="nav-item d-flex">
-                <%= link_to "Dashboard", "/dashboard", class: "nav-link" %>
-              </li>
-            </div>
-          <% else %>
-            <li class="nav-item">
-              <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-            </li>
-          <% end %>
-        </ul>
+            <% end %>
+          </ul>
+        </div>
       </div>
+      <% if user_signed_in? %>
+        <div class="nav-item dropdown">
+          <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </div>
+      <% end %>
     </div>
-    <% if user_signed_in? %>
-    <div class="nav-item dropdown">
-      <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-      </div>
-    </div>
-    <% end %>
   </div>
 </div>
