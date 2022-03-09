@@ -1,0 +1,197 @@
+.logodisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.spandisplay{
+  span {
+    color: #ca5310;
+  }
+}
+.pictodisplay{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 15px;
+  span {
+    color: #ca5310;
+  }
+  h4 {
+    padding-top: 10px;
+  }
+}
+
+.container {
+
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    .nav {
+      width: 90%;
+      display: flex;
+      align-items: center;
+
+      .search {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+
+        input[type=text] {
+          border: none;
+          background: #f1f1f1;
+          padding: 10px;
+          width: 50%;
+        }
+      }
+    }
+
+      .user {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        .img-case {
+          position: relative;
+          width: 50px;
+          height: 50px;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+  .content {
+    position: relative;
+    min-height: 90vh;
+    background: #fef1e1;
+
+    .cards {
+      padding: 20px 15px;
+      height: 392px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #fef1e1;
+      flex-direction: row;
+
+
+      .card {
+        width: 300px;
+        height: 350px;
+        background: white;
+        margin: 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
+        border-radius: 4%;
+        .btn {
+          padding-bottom: 3px;
+          padding-top: 3px;
+        }
+        h4 {
+          color: #fef1e1;
+        }
+        p{
+          color:#ca5310;
+        }
+      }
+    }
+
+    .content-2 {
+      min-height: 50vh;
+      display: flex;
+      justify-content: flex-end;
+      background-color: #fef1e1;
+
+      .recent-payments {
+        flex: 5;
+        background: white;
+        margin: 20px 15px 0 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
+        border-radius: 1%;
+        height: 300px;
+        text-align: center;
+        justify-content: space-between;
+        h4 {
+          color: #fef1e1;
+        }
+      }
+
+
+      .new-students {
+        width: 25%;
+        background: white;
+        margin: 20px 15px 0 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
+        border-radius: 4%;
+        h4 {
+          color: #fef1e1;
+        }
+      }
+    }
+  }
+
+
+.container-recent-payments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delete {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width:536px) {
+  .brand-name h1 {
+      font-size: 16px;
+  }
+  .container .content .cards {
+      justify-content: center;
+  }
+}
