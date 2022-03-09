@@ -18,6 +18,8 @@
 .logodisplay{
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-left: 10px;
 }
 
 .spandisplay{
@@ -33,6 +35,9 @@
   padding: 41px;
   span {
     color: #ca5310;
+  }
+  h4 {
+    padding-top: 10px;
   }
 }
 
@@ -108,19 +113,19 @@
       padding: 20px 15px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      justify-content: space-evenly;
       background-color: #fef1e1;
+      flex-direction: row;
 
 
       .card {
-        width: 250px;
-        height: 150px;
+        width: 300px;
+        height: 350px;
         background: white;
         margin: 20px 10px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
         border-radius: 4%;
@@ -141,32 +146,32 @@
     .content-2 {
       min-height: 50vh;
       display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      justify-content: flex-end;
       background-color: #fef1e1;
 
-
       .recent-payments {
-        min-height: 50vh;
         flex: 5;
         background: white;
-        margin: 0 25px 5px 25px;
+        margin: 20px 15px 0 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: flex;
         flex-direction: column;
         background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
-        border-radius: 4%;
+        border-radius: 1%;
+        height: 300px;
+        text-align: center;
+        justify-content: space-between;
         h4 {
           color: #fef1e1;
         }
       }
 
+
       .new-students {
-        flex: 2;
+        width: 25%;
         background: white;
         min-height: 50vh;
-        margin: 0 25px;
+        margin: 20px 15px 0 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: flex;
         flex-direction: column;
