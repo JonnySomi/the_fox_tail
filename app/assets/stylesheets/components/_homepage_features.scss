@@ -188,14 +188,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (max-width: 576px) {
+@media (min-width: 461px) and (max-width: 576px) {
 
   .row {
     width: 100% !important;
   }
 
   .container-1 {
-    height: 1000px;
+    height: 900px;
     .cards-1-homepage {
       display: flex;
       flex-direction: column;
@@ -207,7 +207,7 @@
     height: 800px;
 
     .cards-2-homepage-design {
-      width: 400px;
+      width: 75vw;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -215,13 +215,17 @@
   }
 
   .container-3 {
-    height: 800px;
+    height: 900px;
 
     .cards-3-homepage-design {
-      width: 400px;
+      width: 75vw;
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      .txt3 {
+        font-size: 22px;
+      }
     }
   }
 
@@ -231,7 +235,67 @@
     align-items: center;
 
     .cards-4-homepage-design {
-      width: 400px;
+      width: 85vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 90px;
+      margin-right: 90px;
+      margin-top: 25px;
+    }
+  }
+}
+
+// for smaller phones
+
+@media (min-width: 300px) and (max-width: 460px) {
+
+  .row {
+    width: 100% !important;
+  }
+
+  .container-1 {
+    height: 2000px;
+    .cards-1-homepage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .container-2 {
+    height: 105vh;
+
+    .cards-2-homepage-design {
+      width: 75vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .container-3 {
+    height: 110vh;
+
+    .cards-3-homepage-design {
+      width: 75vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .txt3 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .container-4 {
+    height: 140vh;
+    justify-content: center;
+    align-items: center;
+
+    .cards-4-homepage-design {
+      width: 85vw;
       display: flex;
       flex-direction: column;
       align-items: center;

@@ -1,3 +1,9 @@
 section {
   width: 1400px;
 }
+
+@media screen and (max-width: 576px) {
+  section {
+    width: 576px;
+  }
+}

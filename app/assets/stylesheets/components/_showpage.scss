@@ -198,11 +198,26 @@
   justify-content: center;
 }
 
-@media screen and (max-width:536px) {
+@media screen and (max-width:576px) {
   .brand-name h1 {
       font-size: 16px;
   }
   .container .content .cards {
       justify-content: center;
+  }
+
+  nav{
+    display: none;
+  }
+  .content{
+    height: 1200px;
+    margin-left: 5px;
+    .content-2{
+      height: 1100px;
+
+      .new-students{
+        width: 100%;
+      }
+    }
   }
 }
