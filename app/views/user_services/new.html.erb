@@ -19,7 +19,7 @@
               <% when 'Professional' %>
                 <%= f.input :genre, collection: ['languages', 'desktop spreadsheet software', 'school/learning', 'work', 'other']  %>
               <% else %>
-                <%= f.input :genre, collection: ['vpn']  %>
+                <%= f.input :genre, collection: ['vpn', 'other']  %>
             <% end %>
             <%= f.input :price_per_month, placeholder: "Price in €" %>
             <div class="container d-flex justify-content-center text-center pb-5">
