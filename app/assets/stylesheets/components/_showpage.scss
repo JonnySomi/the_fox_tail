@@ -24,6 +24,17 @@
   }
 }
 
+.fa-ban {
+  font-size: 30px;
+  opacity: 0.8;
+  color: #ac2828;
+
+  &:hover {
+    opacity: 1;
+    text-shadow: 1px 1px 1px #ac2828;
+  }
+}
+
 .container {
 
   .header {
