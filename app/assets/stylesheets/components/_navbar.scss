@@ -30,3 +30,12 @@
     opacity: 0.7;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .avatar {
+    display: none;
+  }
+  .thetwobuttons {
+    margin-left: 475px !important;
+  }
+}

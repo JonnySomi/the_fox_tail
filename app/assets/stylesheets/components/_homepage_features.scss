@@ -191,6 +191,10 @@
 
 @media screen and (max-width: 576px) {
 
+  .row {
+    width: 100% !important;
+  }
+
   .container-1 {
     height: 1000px;
     .cards-1-homepage {
