@@ -46,7 +46,7 @@
                       <%= cl_image_tag @user_service.service.photo.key, style: "object-fit: cover; border-radius: 50%; height: 200px; width: 200px;" %>
                     </div>
                     <div class="spandisplay">
-                      <h4 class="justify-content-start font-bold text-3xl p-2 ml-3">You currently pay <span><%= (@user_service.price_per_month.to_f / @user_service.hour_spent_per_month).round(2) %>€</span> / hour for this service</h4>
+                      <h4 class="justify-content-start font-bold text-3xl p-2 ml-3">This service currently costs you <span><%= (@user_service.price_per_month.to_f / @user_service.hour_spent_per_month).round(2) %>€</span> / hour</h4>
                     </div>
                   </div>
                 </div>
