@@ -8,6 +8,7 @@
 .spandisplay{
   span {
     color: #ca5310;
+
   }
 }
 .pictodisplay{
@@ -123,7 +124,7 @@
         justify-content: space-evenly;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
-        border-radius: 4%;
+        border-radius: 16px;
         .btn {
           padding-bottom: 3px;
           padding-top: 3px;
@@ -151,7 +152,7 @@
         display: flex;
         flex-direction: column;
         background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
-        border-radius: 1%;
+        border-radius: 16px;
         height: 300px;
         text-align: center;
         justify-content: space-between;
@@ -170,7 +171,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         background: linear-gradient(90deg, rgba(127,29,16,1) 0%, rgba(17,24,39,1) 100%, rgba(17,24,39,1) 100%);
-        border-radius: 4%;
+        border-radius: 16px;
         h4 {
           color: #fef1e1;
         }
