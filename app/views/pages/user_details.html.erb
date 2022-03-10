@@ -8,7 +8,7 @@
               <li class="mr-3 flex-1">
                 <a href="<%= dashboard_path(current_user)%>" class="block py-1 md:py-3 pl-1 align-middle no-underline">
                   <i class="fas fa-chart-area pr-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base block md:inline-block">Analytics</span>
-                 </a>
+                </a>
               </li>
               <% current_user.user_services.each do |user_service| %>
                 <li class="mr-3 flex-1 block py-1 md:py-3 pl-1 align-middle no-underline">
@@ -55,7 +55,7 @@
                             <h6 class="mb-0 text2 details-text">Full Name</h6>
                           </div>
                           <div class="col-sm-9  text-secondary">
-                             <h6 class="user-details-text"><%= "#{current_user.first_name} #{current_user.last_name}" %></h6>
+                            <h6 class="user-details-text"><%= "#{current_user.first_name} #{current_user.last_name}" %></h6>
                           </div>
                         </div>
                         <hr>
