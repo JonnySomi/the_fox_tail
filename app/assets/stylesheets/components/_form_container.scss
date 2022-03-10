@@ -153,3 +153,36 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .container{
+    justify-content: center;
+    display: flex;
+    padding: 0px !important;
+    .row{
+      width: 100% !important;
+    }
+    .form-new{
+      .btn{
+        width: 65%;
+        height: 8vh;
+        padding: 0px !important;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .btn-delete{
+        width: 35%;
+        height: 8vh;
+        padding: 0px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+    }
+  }
+}
