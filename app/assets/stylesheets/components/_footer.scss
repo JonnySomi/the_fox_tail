@@ -33,3 +33,9 @@
 .footer-address {
   font-family: 'Montserrat', sans-serif;
 }
+
+@media screen and (max-width: 576px) {
+  .footer {
+    height: 100%;
+  }
+}

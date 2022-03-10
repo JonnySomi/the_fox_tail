@@ -17,6 +17,10 @@
   color: blueviolet;
 }
 
+#form-container {
+  width: 35.333333%;
+}
+
 
 h1.h3 {
     padding-left: 40px;
@@ -33,4 +37,14 @@ h1.h3 {
 
 .welcometext{
   margin: 33px;
+}
+
+@media screen and (max-width: 576px) {
+  #form-container {
+    width: 100%;
+
+    .form-searchbar {
+      width: 338px;
+    }
+  }
 }
