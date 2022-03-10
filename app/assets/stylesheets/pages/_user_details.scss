@@ -1,5 +1,5 @@
-.detailed-principal {
-  width: 1400px;
+#detailed-principal {
+  width: 100%;
 }
 
 @media screen and (max-width: 576px) {
@@ -7,7 +7,7 @@
     display: none;
   }
 
-  .detailed-principal {
+  #detailed-principal {
     width: 100%;
   }
 }
