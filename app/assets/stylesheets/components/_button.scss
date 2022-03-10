@@ -43,3 +43,21 @@
     opacity: 1;
   }
 }
+
+.btn-homepage {
+  background-color: #282b28;;
+  padding: 15px 23px;
+  color:  #fef1e1;
+  text-decoration: none;
+  opacity: 0.85;
+  border-radius: 17px;
+  box-shadow: 0.9px 0.9px 1.1px #282b28;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 22px;
+
+  &:hover {
+    opacity: 1;
+    color: #ca5310;
+    transition: 0.05s;
+  }
+}
