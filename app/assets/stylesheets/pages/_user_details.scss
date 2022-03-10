@@ -1,3 +1,13 @@
-section {
+.detailed-principal {
   width: 1400px;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    display: none;
+  }
+
+  .detailed-principal {
+    width: 100%;
+  }
 }

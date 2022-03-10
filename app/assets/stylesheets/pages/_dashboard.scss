@@ -11,6 +11,18 @@ nav {
   }
 }
 
+#graphs {
+  flex-direction: row;
+  width: -webkit-fill-available;
+  justify-content: space-evenly;
+}
+
+#separator {
+  width: 45%;
+  margin-left: 28%;
+  color: #ca5310;
+}
+
 section {
 
   h1 {
@@ -36,4 +48,22 @@ section {
 .title {
   color: #fef1e1;
   background-color: #3c1900;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    display: none;
+  }
+
+  .principal {
+    width: 100%;
+  }
+
+  #graphs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
+    text-align: center;
+  }
 }
