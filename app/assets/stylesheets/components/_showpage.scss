@@ -195,6 +195,21 @@
   justify-content: center;
 }
 
+
+#detailed-principal {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    display: none;
+  }
+
+  #detailed-principal {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width:536px) {
   .brand-name h1 {
       font-size: 16px;
